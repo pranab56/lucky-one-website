@@ -31,6 +31,7 @@ const Shop = () => {
         </div>
         <div className='cart'>
             <h1 id='text'>Your phone</h1>
+            
            
            {
                carts.map(cart=><Cart 
@@ -38,7 +39,8 @@ const Shop = () => {
                 key={cart.id}
                 ></Cart>)
            }
-        
+        <button id='btn1'>choose 1 for me</button><br /><br />
+        <button id='btn2'>choose again</button>
         </div>
         </nav>
     );

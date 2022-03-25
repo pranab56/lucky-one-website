@@ -10,7 +10,7 @@
   width: 60%;
  margin-left: 50px;
 }
-button{
+.btn{
     border: none;
     width: 100%;
     background-color: orange;
@@ -20,6 +20,7 @@ button{
 .text{
     margin-left: 15px;
 }
+
 @media only screen and (max-width: 600px) {
     .allPhone img{
         margin-left: 35px;
