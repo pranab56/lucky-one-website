@@ -4,3 +4,8 @@
     text-align: center;
     padding: 1px;
 }
+@media only screen and (max-width: 600px) {
+    .heder{
+        width: 100%;
+    }
+}

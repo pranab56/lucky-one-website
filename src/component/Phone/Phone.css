@@ -1,0 +1,26 @@
+.allPhone{
+    box-shadow: 10px 10px 30px gray;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.allPhone img{
+  margin-left: 80px;
+  margin-top: 10px;
+}
+button{
+    border: none;
+    width: 100%;
+    background-color: orange;
+    height: 30px;
+    border-radius: 4px;
+}
+.text{
+    margin-left: 15px;
+}
+@media only screen and (max-width: 600px) {
+    .allPhone img{
+        margin-left: 35px;
+        margin-top: 10px;
+      }
+}
