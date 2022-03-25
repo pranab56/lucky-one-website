@@ -31,10 +31,11 @@ const Shop = () => {
         </div>
         <div className='cart'>
             <h1 id='text'>Your phone</h1>
+           
            {
                carts.map(cart=><Cart 
                 cart={cart}
-                Key={cart.id}
+                key={cart.id}
                 ></Cart>)
            }
         

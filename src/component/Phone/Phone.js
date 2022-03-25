@@ -11,7 +11,7 @@ const Phone = (props) => {
             <h4>NAME : {name}</h4>
             <h4>PRICE : {price}</h4>
             </div>
-            <button onClick={()=>HandaleAddToCart(props.product.name)}>Add To Cart</button>
+            <button onClick={()=>HandaleAddToCart(props.product)}>Add To Cart</button>
         </div>
     );
 };

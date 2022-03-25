@@ -1,3 +1,13 @@
-#phone ul li{
+#phone {
     padding-left: 30px;
+    padding-top: 20px;
+}
+.phoneCart{
+    display: flex;
+}
+.phoneCart img{
+   width: 15%;
+  
+   margin-top: 20px;
+   margin-left: 10px;
 }
