@@ -20,17 +20,29 @@
 }
 @media only screen and (max-width: 600px) {
 .phoneCart img{
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-top: 7px;
+    margin-left: 10px;
 }
 .phoneCart{
-    width:auto;
-   margin-left: 10px;
-   margin-right: 10px;
+   margin: 0;
+   padding: 0;
+   width: 10px;
 }
 #phone {
-   
+   font-size: 7px;
     padding-top: 0px;
+    margin-left: 0;
+}
+#icon{
+    margin: 0;
+    padding: 0;
+   margin-top: 7px;
+   margin-left: 8px;
+
 }
 }
 
