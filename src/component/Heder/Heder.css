@@ -6,6 +6,7 @@
 }
 @media only screen and (max-width: 600px) {
     .heder{
-        width: 100%;
+        width: auto;
+        text-align: center;
     }
 }

@@ -16,7 +16,9 @@ const Shop = () => {
         const newCart=[...carts,product];
         setCart(newCart);
     }
-  
+    const RendomButton=()=>{
+      console.log('pronab');
+    }
     return (
         <nav className='Shop'>
         <div className='product'>
@@ -39,7 +41,7 @@ const Shop = () => {
                 key={cart.id}
                 ></Cart>)
            }
-        <button id='btn1'>choose 1 for me</button><br /><br />
+        <button id='btn1' onClick={RendomButton}>choose 1 for me</button><br /><br />
         <button id='btn2'>choose again</button>
         </div>
         </nav>
