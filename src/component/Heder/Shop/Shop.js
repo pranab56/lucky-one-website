@@ -7,6 +7,8 @@ import './Shop.css'
 const Shop = () => {
     const [products,setProduct]=useState([]);
     const [carts,setCart]=useState([]);
+    
+   
     useEffect(()=>{
         fetch('fakeData.json')
         .then(res=>res.json())
@@ -16,9 +18,13 @@ const Shop = () => {
         const newCart=[...carts,product];
         setCart(newCart);
     }
-    const RendomButton=()=>{
-      console.log('pronab');
-    }
+   const randomItam=()=>{
+    const random=carts[Math.floor(Math.random()*carts.length)];
+        setCart([random]);
+   }
+   const removeitam=()=>{
+       setCart([]);
+   }
     return (
         <nav className='Shop'>
         <div className='product'>
@@ -32,17 +38,9 @@ const Shop = () => {
         }   
         </div>
         <div className='cart'>
-            <h1 id='text'>Your phone</h1>
-            
-           
-           {
-               carts.map(cart=><Cart 
-                cart={cart}
-                key={cart.id}
-                ></Cart>)
-           }
-        <button id='btn1' onClick={RendomButton}>choose 1 for me</button><br /><br />
-        <button id='btn2'>choose again</button>
+            <h1 id='text'>Selected phone</h1>
+         <Cart cart={carts} random={randomItam} remove={removeitam}></Cart>
+        
         </div>
         </nav>
     );

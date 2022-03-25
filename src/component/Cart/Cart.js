@@ -1,17 +1,25 @@
-import { faClose } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Cart.css'
 const Cart = (props) => {
-   const {cart}=props;
+   const {cart,random,remove}=props;
+
     return (
-             <div className='phoneCart'>
+            <nav>
+                 <div className='phoneCart'>
             
-                <img src={cart.image} alt="" /><h3 id='phone'>{cart.name}</h3> <FontAwesomeIcon id='icon' icon={faClose}></FontAwesomeIcon>
-                
+           {
+               cart.map(cert=><h4 key={cert.id}>{cert.name}</h4>)
+           }
+           
         </div>
-       
+        <div>
+        <button onClick={random} id='btn1'>choose 1 for me</button><br /><br />
+        <button onClick={remove} id='btn2'>choose again</button>
+        </div>
+            </nav>
+           
     );
+    
 };
 
 export default Cart;

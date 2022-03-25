@@ -1,48 +1,10 @@
-#phone {
-    padding-left: 20px;
-    padding-top: 20px;
-}
 .phoneCart{
-    display: flex;
-    
+    margin-left: 60px;
 }
-.phoneCart img{
-   width: 15%;
-  
-   margin-top: 20px;
-   margin-left: 10px;
-}
-#icon{
-    margin-top: 40px;
-    /* padding-left: 5px; */
-    padding: 5px;
-    border: 1px solid black;
-}
-@media only screen and (max-width: 600px) {
-.phoneCart img{
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    padding: 0;
-    margin-top: 7px;
-    margin-left: 10px;
-}
-.phoneCart{
-   margin: 0;
-   padding: 0;
-   width: 10px;
-}
-#phone {
-   font-size: 7px;
-    padding-top: 0px;
-    margin-left: 0;
-}
-#icon{
-    margin: 0;
-    padding: 0;
-   margin-top: 7px;
-   margin-left: 8px;
 
-}
+@media only screen and (max-width: 600px) {
+    .phoneCart{
+        margin-left: 10px;
+    }
 }
 
