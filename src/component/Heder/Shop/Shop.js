@@ -16,11 +16,17 @@ const Shop = () => {
     },[]);
     const HandaleAddToCart=(product)=>{
         const newCart=[...carts,product];
-        setCart(newCart);
+        if(newCart.length<=4){
+            setCart(newCart);
+        }
+        else{
+            alert('sorry you can not add more then phone!!')
+        }
+       
     }
    const randomItam=()=>{
     const random=carts[Math.floor(Math.random()*carts.length)];
-        setCart([random]);
+        setCart([random]);        
    }
    const removeitam=()=>{
        setCart([]);
