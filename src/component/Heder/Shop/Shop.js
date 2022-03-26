@@ -44,7 +44,7 @@ const Shop = () => {
         }   
         </div>
         <div className='cart'>
-            <h1 id='text'>Selected phone</h1>
+            
          <Cart cart={carts} random={randomItam} remove={removeitam}></Cart>
         
         </div>

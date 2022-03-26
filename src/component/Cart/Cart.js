@@ -4,7 +4,8 @@ const Cart = (props) => {
    const {cart,random,remove}=props;
 
     return (
-            <nav>
+            <nav className='cartItam'>
+                <h1 id='text'>Selected phone</h1>
                  <div className='phoneCart'>
             
            {

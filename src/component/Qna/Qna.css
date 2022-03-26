@@ -1,0 +1,36 @@
+.textAns{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    text-align: justify;
+    grid-gap: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Ans1{
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 10px 10px 40px gray;
+    margin-bottom: 20px;
+}
+.Ans2{
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 10px 10px 40px gray;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .textAns{
+        display: grid;
+        grid-template-columns: 5fr;
+        
+    }
+    .Ans1{
+        margin-top: 30px;
+        
+    }
+    .Ans2{
+        margin-top: 2px;
+        margin-bottom: 20px;
+    }
+
+}

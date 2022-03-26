@@ -1,7 +1,10 @@
 .phoneCart{
     margin-left: 60px;
 }
-
+.cartItam{
+    position: sticky;
+    top: 20px;
+}
 @media only screen and (max-width: 600px) {
     .phoneCart{
         margin-left: 10px;
